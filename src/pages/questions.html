@@ -1,0 +1,169 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/icon-page/icon_logo.svg"
+      type="image/x-icon"
+    />
+    <title>Zaguisoft questions</title>
+  </head>
+  <body class="body-user-profile">
+    <header class="header header-user" id="header">
+      <div class="conten-logo-user">
+        <h1 class="logo">
+          <img src="../assets/icon-page/logo.svg" alt="logo" />
+        </h1>
+        <span class="conteiner-user-name" id="conteiner_user_name"></span>
+      </div>
+    </header>
+
+    <nav class="conteniner-menu">
+      <ul class="menu">
+        <li class="item-menu">
+          <div class="lateral-bar"></div>
+          <a href="./courses.html" class="link-header focus-link">Courses</a>
+        </li>
+        <li class="item-menu">
+          <div class="lateral-bar"></div>
+          <div class="conteiner-shopping-car">
+            <a href="./payment.html">
+              <img
+                src="../assets/icon-page/icon_shopping_car.svg"
+                alt=""
+                class="icon-header"
+              />
+              <span id="courses_add" class="counter-courses-add">0</span>
+            </a>
+          </div>
+        </li>
+        <li class="item-menu">
+          <div class="lateral-bar"></div>
+          <div class="conten-icon-user">
+            <a href="./profile.html">
+              <img
+                src="../assets/icon-page/icon_user_header.svg"
+                alt=""
+                class="icon-header"
+              />
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="section-questions">
+      <h1 class="section-questions-title">Frequent questions</h1>
+      <div class="quetion-card">
+        <span class="question-title"
+          >In what currency are the respective courses priced?</span
+        >
+        <p class="question-text">
+          The currency we use is the United States dollar.
+        </p>
+      </div>
+
+      <div class="quetion-card">
+        <span class="question-title"
+          >If a new programming language is released, how long will it take to
+          be available on this website?</span
+        >
+        <p class="question-text">
+          It will be available as soon as our developers verify the programming
+          language and ensure its accessibility.
+        </p>
+      </div>
+
+      <div class="quetion-card">
+        <span class="question-title"
+          >If a programming language receives an update or a version change,
+          will it be available on this website?</span
+        >
+        <p class="question-text">
+          Absolutely! On this website, we aim to offer the latest and most
+          cost-effective options for users.
+        </p>
+      </div>
+
+      <div class="quetion-card">
+        <span class="question-title"
+          >In which language are all the courses available?</span
+        >
+        <p class="question-text">
+          Yes, our website will be available at all times so that users can
+          access the courses regardless of their schedule.
+        </p>
+      </div>
+
+      <div class="quetion-card">
+        <span class="question-title"
+          >Will the website be available 24 hours a day?</span
+        >
+        <p class="question-text">
+          Our main language is English, in order to be more accessible to the
+          global audience.
+        </p>
+      </div>
+
+      <div class="quetion-card">
+        <span class="question-title"
+          >If I purchase a course, how long will I have access to it?</span
+        >
+        <p class="question-text">
+          Once purchased, users will have unlimited access to their course.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container-copyright">
+        <span>Zaguisoft &copy; </span>
+        <span id="date">2023</span>
+        <span>Ibague Colombia</span>
+      </div>
+
+      <div class="social-media" style="display: flex; column-gap: 20px">
+        <a href="./pqr.html">
+          <img
+            src="../assets/icon-page/email.svg"
+            alt=""
+            style="width: 30px; height: 30px"
+          />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img
+            src="../assets/icon-page/youtube.svg"
+            alt=""
+            style="width: 30px; height: 30px"
+          />
+        </a>
+      </div>
+      <div class="container-msg">
+        <a href="./questions.html" style="color: #fff">Frequent questions</a>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/index.js" type="module"></script>
+  <script src="../js/modules/show-user-information-in-profile.js"></script>
+  <script src="../js/modules/log-out.js" type="module"></script>
+  <script src="../js/modules/delete-account-by-user.js" type="module"></script>
+  <script
+    src="../js/modules/show-purchased-courses-by-user.js"
+    type="module"
+  ></script>
+  <script
+    src="../js/modules/show-modal-delete-account.js"
+    type="module"
+  ></script>
+
+  <script
+    src="../js/modules/count-number-of-courses-added.js"
+    type="module"
+  ></script>
+</html>
