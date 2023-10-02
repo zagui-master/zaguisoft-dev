@@ -5,6 +5,7 @@ import { paymentGatewayData } from "../data/credit-card-data.js";
 import { showCoursesToPayment } from "./show-courses-to-payment.js";
 import { calculateFinalPriceInPayment } from "./calculate-final-price-in-payment.js";
 import { numberOfCoursesAdded } from "./count-number-of-courses-added.js";
+import {showModalpaymentLoader} from "./modal-loader-payment.js"
 
 const {
   form,
@@ -175,8 +176,15 @@ form.addEventListener("submit", (e) => {
     state.card_month &&
     state.card_year &&
     state.security_code
-  ) {
+  )
+  {
+    console.log("ok")
+    showModalpaymentLoader()
+    console.log("ok 2");
+    
     buyCourse();
+    console.log("ok 3");
+
     numberOfCoursesAdded();
     form_payment.reset();
   }

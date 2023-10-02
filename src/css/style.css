@@ -38,6 +38,9 @@
 @import "./componets/section-accounts-in-admin.css";
 
 @import "./componets/modal.css";
+@import "./componets/animation-payment-modal.css";
+
+@import "./componets/modal-payment-loader.css";
 
 @import "./componets/card-info-course.css";
 
