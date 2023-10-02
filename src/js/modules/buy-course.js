@@ -178,13 +178,8 @@ form.addEventListener("submit", (e) => {
     state.security_code
   )
   {
-    console.log("ok")
     showModalpaymentLoader()
-    console.log("ok 2");
-    
     buyCourse();
-    console.log("ok 3");
-
     numberOfCoursesAdded();
     form_payment.reset();
   }
