@@ -2,121 +2,97 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="../assets/icon-page/icon_logo.svg"
-      type="image/x-icon"
-    />
-    <title>Zaguisoft</title>
-  </head>
-  <body class="body-user-profile">
-    <header class="header header-user" id="header">
-      <div class="conten-logo-user">
-        <h1 class="logo">
-          <img src="../assets/icon-page/logo.svg" alt="logo" />
-        </h1>
-        <span class="conteiner-user-name" id="conteiner_user_name"></span>
-      </div>
-    </header>
 
-    <nav class="conteniner-menu">
-      <ul class="menu">
-        <li class="item-menu">
-          <div class="lateral-bar"></div>
-          <a href="./courses.html" class="link-header focus-link">Courses</a>
-        </li>
-        <li class="item-menu">
-          <div class="lateral-bar"></div>
-          <div class="conteiner-shopping-car">
-            <a href="./payment.html">
-              <img
-                src="../assets/icon-page/icon_shopping_car.svg"
-                alt=""
-                class="icon-header"
-              />
-              <span id="courses_add" class="counter-courses-add">0</span>
-            </a>
-          </div>
-        </li>
-        <li class="item-menu">
-          <div class="lateral-bar focus-bar"></div>
-          <div class="conten-icon-user">
-            <a href="./profile.html">
-              <img
-                src="../assets/icon-page/icon_user_header.svg"
-                alt=""
-                class="icon-header"
-              />
-            </a>
-          </div>
-        </li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="shortcut icon" href="../assets/icon-page/icon_logo.svg"
+    type="image/x-icon" />
+  <title>Zaguisoft</title>
+</head>
 
-    <section class="section-pqr section">
-      <div class="card">
-        <div class="header-card">
-          <h1 class="header-title">Zaguisoft PQR</h1>
-          <span class="header-caption">Send a message with your concerns</span>
+<body class="body-user-profile">
+  <header class="header header-user" id="header">
+    <div class="conten-logo-user">
+      <h1 class="logo">
+        <img src="../assets/icon-page/logo.svg" alt="logo" />
+      </h1>
+      <span class="conteiner-user-name" id="conteiner_user_name"></span>
+    </div>
+  </header>
+
+  <nav class="conteniner-menu">
+    <ul class="menu">
+      <li class="item-menu">
+        <div class="lateral-bar"></div>
+        <a href="./courses.html" class="link-header focus-link">Courses</a>
+      </li>
+      <li class="item-menu">
+        <div class="lateral-bar"></div>
+        <div class="conteiner-shopping-car">
+          <a href="./payment.html">
+            <img src="../assets/icon-page/icon_shopping_car.svg" alt=""
+              class="icon-header" />
+            <span id="courses_add" class="counter-courses-add">0</span>
+          </a>
         </div>
-        <form
-          class="form-card"
-          action="https://formsubmit.co/58ed33c7512782b5201a7d5fcc66139d "
-          method="POST"
-        >
-          <div class="container-input">
-            <input type="text" name="name" required placeholder="Name" />
-          </div>
-          <div class="container-input">
-            <input type="email" name="email" required placeholder="Email" />
-          </div>
+      </li>
+      <li class="item-menu">
+        <div class="lateral-bar focus-bar"></div>
+        <div class="conten-icon-user">
+          <a href="./profile.html">
+            <img src="../assets/icon-page/icon_user_header.svg" alt=""
+              class="icon-header" />
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
 
-          <div class="container-input">
-            <input type="text" name="subject" required placeholder="Subject" />
-          </div>
-
-          <div class="container-input">
-            <textarea
-              required
-              name="comments"
-              id=""
-              cols="30"
-              rows="10"
-              placeholder="Comments"
-            ></textarea>
-          </div>
-
-          <button type="submit" class="button-form">Send</button>
-          <input
-            type="hidden"
-            name="_next"
-            value="https://zagui-master.github.io/zaguisoft.github.io/pages/courses.html"
-          />
-          <input type="hidden" name="_captcha" value="false" />
-        </form>
+  <section class="section-pqr section">
+    <div class="card">
+      <div class="header-card">
+        <h1 class="header-title">Zaguisoft PQR</h1>
+        <span class="header-caption">Send a message with your concerns</span>
       </div>
-    </section>
+      <form class="form-card"
+        action="https://formsubmit.co/58ed33c7512782b5201a7d5fcc66139d " method="POST">
+        <div class="container-input">
+          <input type="text" name="name" required placeholder="Name" />
+        </div>
+        <div class="container-input">
+          <input type="email" name="email" required placeholder="Email" />
+        </div>
 
-<footer class="footer" id="footer">
+        <div class="container-input">
+          <input type="text" name="subject" required placeholder="Subject" />
+        </div>
 
-</footer>
-  </body>
-  <script src="../js/index.js" type="module"></script>
-  <script src="../js/modules/show-user-information-in-profile.js"></script>
-  <script src="../js/modules/log-out.js" type="module"></script>
-  <script
-    src="../js/modules/show-purchased-courses-by-user.js"
-    type="module"
-  ></script>
-  <script
-    src="../js/modules/count-number-of-courses-added.js"
-    type="module"
-  ></script>
+        <div class="container-input">
+          <textarea required name="comments" id="" cols="30" rows="10"
+            placeholder="Comments"></textarea>
+        </div>
+
+        <button type="submit" class="button-form button">Send</button>
+        <input type="hidden" name="_next"
+          value="https://zagui-master.github.io/zaguisoft.github.io/pages/courses.html" />
+        <input type="hidden" name="_captcha" value="false" />
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+
+  </footer>
+</body>
+<script src="../js/index.js" type="module"></script>
+
+<script src="../js/modules/show-user-information-in-profile.js"></script>
+<script src="../js/modules/log-out.js" type="module"></script>
+<script src="../js/modules/show-purchased-courses-by-user.js" type="module"></script>
+<script src="../js/modules/count-number-of-courses-added.js" type="module"></script>
+<script src="../js/modules/btn-animation.js" type="module"></script>
+
 </html>
-
-
