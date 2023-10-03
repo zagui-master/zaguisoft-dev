@@ -1,13 +1,10 @@
 /** @format */
 
-
 const modal_payment_loader = document.getElementById("modal_payment_loader");
 
-export  const showModalpaymentLoader = () =>
-{
-   
-    modal_payment_loader.classList.add("show-payment-loader");
-    modal_payment_loader.innerHTML = `
+export const showModalpaymentLoader = () => {
+	modal_payment_loader.classList.add("show-payment-loader");
+	modal_payment_loader.innerHTML = `
       <div class="store-container">
     <div class="border-animation">
       <svg role="img" xmlns="http://www.w3.org/2000/svg" id="store"
@@ -268,11 +265,9 @@ export  const showModalpaymentLoader = () =>
   </div>
       
       `;
-  
-    setTimeout(() => {
-      modal_payment_loader.innerHTML = "";
-      modal_payment_loader.classList.remove("show-payment-loader");
-    }, 8000);
 
-}
-
+	setTimeout(() => {
+		modal_payment_loader.innerHTML = "";
+		modal_payment_loader.classList.remove("show-payment-loader");
+	}, 8000);
+};
