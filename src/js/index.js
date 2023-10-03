@@ -2,12 +2,8 @@
 
 import { showUserNameInheader } from "./modules/show-user-name-header.js";
 
+import { renderFooter } from "./modules/render-footer.js";
+
 showUserNameInheader();
 
-const date = document.getElementById("date");
-
-let d = new Date();
-
-let year = d.getFullYear();
-
-date.innerHTML = year;
+renderFooter()

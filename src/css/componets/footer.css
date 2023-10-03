@@ -1,83 +1,105 @@
 /** @format */
 
 .footer {
-  width: 100%;
-  height: 100px;
-  background-color: var(--blue_1);
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	position: relative;
+}
+
+
+.footer > svg {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+  fill:var(--blue_1);
+}
+
+.conten-info-footer {
+	position: absolute;
+	z-index: 1000;
+	top: calc(80%);
+	left: 0;
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .container-copyright {
-  color: var(--white_1);
+	color: var(--white_1);
 }
 
 .container-msg {
-  display: flex;
-  column-gap: 20px;
-  align-items: center;
-  color: var(--white_1);
+	display: flex;
+	column-gap: 20px;
+	align-items: center;
+	color: var(--white_1);
 }
 
 .form-msg {
-  display: flex;
-  align-items: center;
-  column-gap: 15px;
+	display: flex;
+	align-items: center;
+	column-gap: 15px;
 }
 
 .input-msg {
-  width: 300px;
-  height: 50px;
-  padding-inline: 10px;
-  border: none !important;
-  outline: none !important;
-  border-radius: 5px;
+	width: 300px;
+	height: 50px;
+	padding-inline: 10px;
+	border: none !important;
+	outline: none !important;
+	border-radius: 5px;
 }
 
 .form-msg > button {
-  width: 150px;
-  height: 50px;
-  outline: none !important;
-  border-radius: 5px;
-  background-color: transparent;
-  border: 1px solid var(--white_1);
-  color: var(--white_1);
-  cursor: pointer;
+	width: 150px;
+	height: 50px;
+	outline: none !important;
+	border-radius: 5px;
+	background-color: transparent;
+	border: 1px solid var(--white_1);
+	color: var(--white_1);
+	cursor: pointer;
 }
 .form-msg > button:hover {
-  background-color: var(--white_1);
-  color: var(--blue_1);
+	background-color: var(--white_1);
+	color: var(--blue_1);
 }
 
 @media (min-width: 300px) and (max-width: 800px) {
-  .footer {
-    padding: 20px;
+	.footer {
+		margin: 0;
+		height: auto;
 
-    height: auto;
-
-    flex-direction: column;
-    row-gap: 30px;
-  }
+		flex-direction: column;
+		row-gap: 30px;
+	}
 }
 
 @media (min-width: 300px) and (max-width: 500px) {
-  .footer {
-    padding: 20px;
 
-    height: auto;
-
-    flex-direction: column;
-    row-gap: 30px;
-  }
-  .form-msg {
+  .conten-info-footer{
+    background-color: var(--blue_1);
     display: flex;
-    align-items: center;
-    column-gap: 15px;
     flex-direction: column;
-    row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+padding-bottom:20px ;
+padding-top: 20px;
   }
-  .form-msg > button {
-    width: 300px;
-  }
+
+	.form-msg {
+		display: flex;
+		align-items: center;
+		column-gap: 15px;
+		flex-direction: column;
+		row-gap: 15px;
+	}
+	.form-msg > button {
+		width: 300px;
+	}
 }
