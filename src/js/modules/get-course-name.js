@@ -11,7 +11,3 @@ conten_courses.addEventListener("click", (e) => {
   }
 });
 
-/*
-[2].childNodes[1].childNodes[3].childNodes[1].childNodes[0].nodeValue
-show_info_course;
-*/
