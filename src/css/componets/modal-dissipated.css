@@ -1,0 +1,54 @@
+/** @format */
+
+.modal-dissipated {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: calc(100%);
+	margin-inline: auto;
+	font-size: 35px;
+	position: absolute;
+	top: 150px;
+	text-align: center;
+	color: transparent;
+	font-weight: 700;
+}
+.dissipated-animation {
+	animation: dissipated 5s;
+}
+@keyframes dissipated {
+	0% {
+		color: rgb(24, 118, 242);
+	}
+
+	10% {
+		color: rgba(24, 118, 242, 0.89);
+	}
+
+	15% {
+		color: rgba(24, 118, 242, 0.772);
+	}
+
+	20% {
+		color: rgba(24, 118, 242, 0.667);
+	}
+
+	25% {
+		color: rgba(24, 118, 242, 0.571);
+	}
+	30% {
+		color: rgba(24, 118, 242, 0.461);
+	}
+	35% {
+		color: rgba(24, 118, 242, 0.347);
+	}
+	40% {
+		color: rgba(24, 118, 242, 0.237);
+	}
+	45% {
+		color: rgba(24, 118, 242, 0.132);
+	}
+	50% {
+		color: rgba(24, 118, 242, 0);
+	}
+}

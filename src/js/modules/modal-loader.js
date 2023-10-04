@@ -1,10 +1,19 @@
 /** @format */
 
-const modal_payment_loader = document.getElementById("modal_payment_loader");
+const modal_loader = document.getElementById("modal_loader");
+let url = location.href;
+const arr = url.split("/");
+const urlActual = arr[arr.length - 1];
 
-export const showModalpaymentLoader = () => {
-	modal_payment_loader.classList.add("show-payment-loader");
-	modal_payment_loader.innerHTML = `
+let text = ""
+
+
+
+export const showModalLoader = () => {
+  urlActual === "pqr.html" ? (text = "pqr") : (text = "payment");
+
+	modal_loader.classList.add("show-payment-loader");
+	modal_loader.innerHTML = `
       <div class="store-container">
     <div class="border-animation">
       <svg role="img" xmlns="http://www.w3.org/2000/svg" id="store"
@@ -154,7 +163,7 @@ export const showModalpaymentLoader = () => {
               d="M506.9 253.6H21.2c-6.6 0-12-5.4-12-12v-56.7c0-6.6 5.4-12 12-12h485.8c6.6 0 12 5.4 12 12v56.7C518.9 248.2 513.5 253.6 506.9 253.6z" />
             <text transform="matrix(1.0027 0 0 1 44.8218 224.8768)"
               font-family='Fredoka One' font-size="34" fill="#0170BB"> Processing your
-              payment </text>
+              ${text} </text>
             <path fill="#a5c7e4"
               d="M850.5 216.5h79.7l-4.5 10.7c0 0-2.7 7.2-9.9 7.2h-72.6c0 0-6.3-0.9-1.8-7.2L850.5 216.5z" />
             <path fill="none" class="stroke"
@@ -267,7 +276,7 @@ export const showModalpaymentLoader = () => {
       `;
 
 	setTimeout(() => {
-		modal_payment_loader.innerHTML = "";
-		modal_payment_loader.classList.remove("show-payment-loader");
+		modal_loader.innerHTML = "";
+		modal_loader.classList.remove("show-payment-loader");
 	}, 8000);
 };

@@ -1,15 +1,16 @@
 /** @format */
 
-.modal-payment-loader {
+.modal-loader {
 	width: 100%;
 	height: 100vh;
-	background-color: hsla(0, 0%, 100%, 0.086);
+	background-color: transparent;
 	position: absolute;
-	top: 0;
+	top: 0px;
 	bottom: 0;
 	left: 0;
 	display: none;
 	z-index: 10000;
+
 }
 .show-payment-loader {
 	display: block;
@@ -17,4 +18,13 @@
 
 .disguise-courses_payment-info-payment {
 	display: none;
+}
+
+
+
+@media (max-width: 500px) {
+  .show-payment-loader {
+    top: 140px;
+   
+  }
 }

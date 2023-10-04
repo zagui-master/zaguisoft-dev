@@ -50,15 +50,17 @@
       </li>
     </ul>
   </nav>
+  <div class="modal-dissipated" id="modal_dissipated">Successfully PQR</div>
 
-  <section class="section-pqr section">
+  <section class="section-pqr section" style="margin-top: 100px;">
     <div class="card">
       <div class="header-card">
         <h1 class="header-title">Zaguisoft PQR</h1>
         <span class="header-caption">Send a message with your concerns</span>
       </div>
-      <form class="form-card"
-        action="https://formsubmit.co/58ed33c7512782b5201a7d5fcc66139d " method="POST">
+      <form class="form-card" id="form_pqr"
+      
+        >
         <div class="container-input">
           <input type="text" name="name" required placeholder="Name" />
         </div>
@@ -71,22 +73,25 @@
         </div>
 
         <div class="container-input">
-          <textarea required name="comments" id="" cols="30" rows="10"
+          <textarea required name="comments" id="" cols="30" rows="5"
             placeholder="Comments"></textarea>
         </div>
 
         <button type="submit" class="button">Send</button>
-        <input type="hidden" name="_next"
-          value="https://zagui-master.github.io/zaguisoft.github.io/pages/courses.html" />
+        <input type="hidden" name="_next" id="input_redirection"
+         />
         <input type="hidden" name="_captcha" value="false" />
       </form>
     </div>
   </section>
+  <div class="modal-loader" id="modal_loader"></div>
 
   <footer class="footer" id="footer">
 
   </footer>
 </body>
+
+
 <script src="../js/index.js" type="module"></script>
 
 <script src="../js/modules/show-user-information-in-profile.js"></script>
@@ -94,5 +99,5 @@
 <script src="../js/modules/show-purchased-courses-by-user.js" type="module"></script>
 <script src="../js/modules/count-number-of-courses-added.js" type="module"></script>
 <script src="../js/modules/btn-animation.js" type="module"></script>
-
+<script src="../js/modules/send-pqr.js" type="module"></script>
 </html>

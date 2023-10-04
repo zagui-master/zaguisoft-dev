@@ -41,8 +41,9 @@
 
 @import "./componets/modal.css";
 @import "./componets/animation-payment-modal.css";
+@import "./componets/modal-dissipated.css";
 
-@import "./componets/modal-payment-loader.css";
+@import "./componets/modal-loader.css";
 
 @import "./componets/card-info-course.css";
 

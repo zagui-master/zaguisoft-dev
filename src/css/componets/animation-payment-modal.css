@@ -4,7 +4,7 @@
   line-height: 0;
   margin-top: 200px;
   margin-inline: auto;
-  width: 50%;
+  width: 47%;
 }
 
 .stroke {
@@ -326,9 +326,9 @@
 
 
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
   .store-container {
-    margin-top: 35vh;
-    width: 80%;
+    width: 90%;
+   
   }
 }
