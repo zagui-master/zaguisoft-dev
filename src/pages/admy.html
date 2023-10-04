@@ -94,15 +94,16 @@
             />
             <span id="alert_password_by_admin"></span>
           </div>
-          <button type="submit" class="button-form button-delete-account">
+          <button type="submit" class="button">
             Delete account
           </button>
-          <span class="button-form" id="btn_cancel">Cancel</span>
+          <span class="button-delete-account" id="btn_cancel">Cancel</span>
         </form>
       </div>
     </div>
-
+<!-------------------------------------------------------------------------->
     <div class="modal-create-account modal" id="modal_create_account">
+    
       <div class="card">
         <div class="header-card header-card-log-in">
           <h2 class="header-title">Create account</h2>
@@ -148,19 +149,22 @@
             />
             <span id="alert_password"></span>
           </div>
-          <button type="submit" class="button-form">Create account</button>
+          <button type="submit" class="button">Create account</button>
           <span
-            class="button-form button-delete-account"
+            class="button-delete-account"
             id="btn_cancel_create_account"
           >
             Cancel
           </span>
         </form>
       </div>
+
     </div>
+    <!----------------------------------------------------------------------->
   </body>
 
   <script src="../js/modules/show-user-name-admin.js" type="module"></script>
+  
   <script src="../js/modules/search-account-by-admin.js" type="module"></script>
   <script src="../js//modules/log-out-by-admin.js" type="module"></script>
   <script
@@ -176,4 +180,5 @@
     type="module"
   ></script>
   <script src="../js/modules/create-account-by-admin.js" type="module"></script>
+  <script src="../js/modules/btn-animation.js" type="module"></script>
 </html>

@@ -44,17 +44,6 @@
   font-size: 20px;
   color: var(--black_text_1);
 }
-.button-course {
-  width: 280px;
-  height: 35px;
-  background-color: var(--blue_1);
-  border: none;
-  color: var(--white_1);
-  font-weight: 600;
-  font-size: 17px;
-  border-radius: 20px;
-  cursor: pointer;
-}
 
 .card-course > a > .bi-question-circle-fill {
   color: var(--blue_1);
@@ -62,8 +51,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.button-course:hover {
-  background-color: var(--blue_2);
 }

@@ -4,7 +4,9 @@ import { signUpForm } from "../helpers/locatores.js";
 const showModal = () => {
   const btn_create_accout = document.getElementById("btn_create_accout");
   const modal = document.getElementById("modal_create_account");
-  btn_create_accout.addEventListener("click", () => {
+  btn_create_accout.addEventListener("click", () =>
+  {
+  
     modal.classList.add("show-modal");
     signUpForm.form.reset();
   });
