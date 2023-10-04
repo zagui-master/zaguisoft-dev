@@ -23,8 +23,13 @@ const addCourse = (course) => {
   }
 };
 
-conten_courses.addEventListener("click", (e) => {
-  if (e.target.innerText === "Add") {
+conten_courses.addEventListener("click", (e) =>
+{
+   const charA =
+		e.composedPath()[1].childNodes[5].childNodes[0].childNodes[0]
+			.childNodes[0].nodeValue;
+  
+  if (charA === "A") {
     const courseElement = e.target.closest(".card-course");
     const course_id = courseElement.id;
     const course_img = courseElement
