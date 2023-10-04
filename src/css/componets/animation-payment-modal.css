@@ -2,7 +2,8 @@
 
 .store-container {
   line-height: 0;
-  margin: 100px auto;
+  margin-top: 200px;
+  margin-inline: auto;
   width: 50%;
 }
 
