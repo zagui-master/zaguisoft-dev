@@ -21,16 +21,16 @@
       </div>
       <form class="form-card form-login" id="form_log_in">
         <div class="container-input">
-          <input type="text" name="email-login" id="user_email_login"
+          <input type="text" name="email-login" id="user_email_login" data-testid="email"
             placeholder="Email" />
           <span id="alert_email_login"></span>
         </div>
         <div class="container-input">
-          <input type="password" name="password-login" id="user_password_login"
+          <input type="password" name="password-login" id="user_password_login" data-testid="password"
             placeholder="Password" />
           <span id="alert_password_login"></span>
         </div>
-        <button type="submit" class="button">
+        <button type="submit" class="button" data-testid="btn-login">
           Log in
         </button>
       </form>

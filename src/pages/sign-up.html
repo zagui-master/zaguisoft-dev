@@ -22,29 +22,29 @@
       </div>
       <form class="form-card form-signup" id="form_sign_up">
         <div class="container-input">
-          <input type="text" name="name" id="user_name" placeholder="Name" />
+          <input type="text" name="name" id="user_name" data-testid="name" placeholder="Name" />
           <span id="alert_name"></span>
         </div>
         <div class="container-input">
-          <input type="text" name="last-name" id="user_last_name"
+          <input type="text" name="last-name" id="user_last_name" data-testid="lastname"
             placeholder="Last name" />
           <span id="alert_last_name"></span>
         </div>
         <div class="container-input">
-          <input type="email" name="email" id="user_email" placeholder="Email" />
+          <input type="email" name="email" id="user_email" data-testid="email" placeholder="Email" />
           <span id="alert_email"></span>
         </div>
         <div class="container-input">
-          <input type="number" name="phone-number" id="user_phone_number"
+          <input type="number" name="phone-number" id="user_phone_number" data-testid="phone"
             placeholder="Phone number" />
           <span id="alert_phone_number"></span>
         </div>
         <div class="container-input">
-          <input type="password" name="password" id="user_password"
+          <input type="password" name="password" id="user_password" data-testid="password"
             placeholder="New password" />
           <span id="alert_password"></span>
         </div>
-        <button type="submit" class="button">
+        <button type="submit" class="button" data-testid="btn-signin">
           Sign up
         </button>
       </form>
