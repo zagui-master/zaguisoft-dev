@@ -40,6 +40,13 @@ let state = {
   verifyExistingAccount: false,
 };
 
+const date = new Date()
+const day = date.getDate()
+const mont = date.getMonth()
+const year = date.getFullYear()
+const fullDate = `${day}/${mont}/${year}`
+
+
 const getUserAccounts = () => {
   return JSON.parse(sessionStorage.getItem("account")) || [];
 };
@@ -136,11 +143,12 @@ const validatePassword = (password, regexPassword) => {
 
 const getData = (name, lastName, email, phoneNumber, password) => {
   const data = {
-    name,
-    lastName,
-    email,
-    phoneNumber,
-    password,
+		name,
+		lastName,
+		email,
+		phoneNumber,
+		password,
+		creationDate: fullDate,
   };
 
   const accounts = getUserAccounts();
