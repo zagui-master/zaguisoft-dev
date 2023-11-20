@@ -42,9 +42,10 @@ let state = {
 
 const date = new Date()
 const day = date.getDate()
-const mont = date.getMonth()
+const mont = date.getMonth()+1
 const year = date.getFullYear()
 const fullDate = `${day}/${mont}/${year}`
+console.log(fullDate)
 
 
 const getUserAccounts = () => {

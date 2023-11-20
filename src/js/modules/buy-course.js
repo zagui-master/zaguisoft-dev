@@ -50,7 +50,10 @@ const getPurchasedCourse = (currentUser) => {
   return JSON.parse(localStorage.getItem(`purchased_${currentUser}`)) || [];
 };
 
-const buyCourse = () => {
+const buyCourse = () =>
+{
+
+  
   const currentUser = getCurrentUser();
   const purchasedCourse = getPurchasedCourse(currentUser);
   const coursesToPay = getCoursesToPay(currentUser);

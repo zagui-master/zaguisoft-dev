@@ -6,6 +6,12 @@ import { calculateFinalPriceInShoppingCart } from "./calculate-final-price-in-sh
 
 const conten_courses = document.getElementById("conten_courses");
 
+  const date = new Date();
+  const day = date.getDate();
+  const mont = date.getMonth() + 1;
+  const year = date.getFullYear();
+  const fullDate = `${day}/${mont}/${year}`;
+
 const current_user = JSON.parse(sessionStorage.getItem("current_user")) || "";
 
 const getCourses = () => {
@@ -47,6 +53,7 @@ conten_courses.addEventListener("click", (e) =>
       course_name: course_name || "",
       course_creator: course_creator || "",
       course_price: course_price || "",
+      courseDate:fullDate
     };
 
     addCourse(course);
