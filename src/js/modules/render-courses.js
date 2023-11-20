@@ -28,7 +28,7 @@ const renderCourse = (course) => {
         </div>
       </div>
       <a id="show_info_course" href="./info-course.html"><i class="bi bi-question-circle-fill"></i></a>
-      <button class="button ${course.id}" >${course.state}</button>
+      <button class="button ${course.id}" data-testid="course-${course.id}" >${course.state}</button>
     </div>
   `;
 };

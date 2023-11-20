@@ -77,29 +77,34 @@
         </div>
       </div>
       <div class="conten-input">
-        <input type="number" name="" id="card_number" placeholder="Card number" />
+        <input type="number" name="" id="card_number" data-testid="card_number"
+          placeholder="Card number" />
         <span id="alert_card_number"></span>
       </div>
       <div class="conten-input">
-        <input type="text" name="" id="cardholder_name" placeholder="Cardholder name" />
+        <input type="text" name="" id="cardholder_name" data-testid="card_name"
+          placeholder="Cardholder name" />
         <span id="alert_cardholder_name"></span>
       </div>
       <div class="conten-input conten-input-date-security-code">
         <div class="conten-input-date">
           <div class="conten-input-month-year">
-            <input type="number" name="" id="card_month" placeholder="(MM" />
+            <input type="number" name="" id="card_month" data-testid="card_month"
+              placeholder="(MM" />
             <span>/</span>
-            <input type="number" name="" id="card_year" placeholder="YY)" />
+            <input type="number" name="" id="card_year" data-testid="card_year"
+              placeholder="YY)" />
           </div>
           <span id="alert_month_year"></span>
         </div>
 
         <div class="conte-input-security-code">
-          <input type="number" name="" id="security_code" placeholder="Security code" />
+          <input type="number" name="" id="security_code" data-testid="security_code"
+            placeholder="Security code" />
           <span id="alert_security_code"></span>
         </div>
       </div>
-      <button type="submit" class="button">Pay</button>
+      <button type="submit" class="button" data-testid="btn-pay">Pay</button>
     </form>
   </div>
 

@@ -58,28 +58,28 @@
         <h1 class="header-title">Zaguisoft PQR</h1>
         <span class="header-caption">Send a message with your concerns</span>
       </div>
-      <form class="form-card" id="form_pqr"
-      
-        >
+      <form class="form-card" id="form_pqr">
         <div class="container-input">
-          <input type="text" name="name" required placeholder="Name" />
+          <input type="text" name="name" data-testid="input-name" required
+            placeholder="Name" />
         </div>
         <div class="container-input">
-          <input type="email" name="email" required placeholder="Email" />
-        </div>
-
-        <div class="container-input">
-          <input type="text" name="subject" required placeholder="Subject" />
+          <input type="email" name="email" data-testid="input-email" required
+            placeholder="Email" />
         </div>
 
         <div class="container-input">
-          <textarea required name="comments" id="" cols="30" rows="5"
-            placeholder="Comments"></textarea>
+          <input type="text" name="subject" data-testid="input-subject" required
+            placeholder="Subject" />
         </div>
 
-        <button type="submit" class="button">Send</button>
-        <input type="hidden" name="_next" id="input_redirection"
-         />
+        <div class="container-input">
+          <textarea required name="comments" data-testid="input-textarea" cols="30"
+            rows="5" placeholder="Comments"></textarea>
+        </div>
+
+        <button type="submit" class="button" data-testid="btn-send">Send</button>
+        <input type="hidden" name="_next" id="input_redirection" />
         <input type="hidden" name="_captcha" value="false" />
       </form>
     </div>
@@ -100,4 +100,5 @@
 <script src="../js/modules/count-number-of-courses-added.js" type="module"></script>
 <script src="../js/modules/btn-animation.js" type="module"></script>
 <script src="../js/modules/send-pqr.js" type="module"></script>
+
 </html>

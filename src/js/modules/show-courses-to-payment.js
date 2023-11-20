@@ -15,7 +15,7 @@ export const showCoursesToPayment = () => {
             <span>${course.course_creator}</span>
           </div>
         </div>
-        <img src="../assets/icon-page/icon_delete.svg" alt="" class="icon-delete"/>
+        <img src="../assets/icon-page/icon_delete.svg" alt="" class="icon-delete" data-testid="delete-course"/>
       </div>
     `;
     })
