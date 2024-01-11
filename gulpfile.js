@@ -58,11 +58,6 @@ const data = () => {
     .pipe(gulp.dest("public/data"));
 };
 /*
-const server = () => {
-  browserSync.init({
-    server: "public/index.html",
-    port: 3000,
-  });
-};
-*/
+
 gulp.task("built", gulp.parallel(html, css, assets, font, javascript, data));
+*/
